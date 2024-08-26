@@ -45,10 +45,7 @@ namespace UnitOfWorkDemo.Controllers
             {
                 return Ok(productDetails);
             }
-            else
-            {
-                return BadRequest();
-            }
+            return BadRequest();
         }
 
         /// <summary>
@@ -65,10 +62,7 @@ namespace UnitOfWorkDemo.Controllers
             {
                 return Ok(isProductCreated);
             }
-            else
-            {
-                return BadRequest();
-            }
+            return BadRequest();
         }
 
         /// <summary>
@@ -88,10 +82,7 @@ namespace UnitOfWorkDemo.Controllers
                 }
                 return BadRequest();
             }
-            else
-            {
-                return BadRequest();
-            }
+            return BadRequest();
         }
 
         /// <summary>
@@ -108,10 +99,7 @@ namespace UnitOfWorkDemo.Controllers
             {
                 return Ok(isProductCreated);
             }
-            else
-            {
-                return BadRequest();
-            }
+            return BadRequest();
         }
     }
 }

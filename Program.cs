@@ -14,8 +14,9 @@ builder.Services.AddSwaggerGen();
 // Add the custom DbContext 
 builder.Services.AddDIServices(builder.Configuration);
 
-// Add the Product Service of CRUD
+// Add the Services
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<ICustomerService, CustomerService>();
 
 var app = builder.Build();
 

@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using UnitOfWorkDemo.Data;
 using UnitOfWorkDemo.Interfaces;
+using UnitOfWorkDemo.IRepositories;
 using UnitOfWorkDemo.Repositories;
 
 namespace UnitOfWorkDemo.Services.ServiceExtension
@@ -15,6 +16,7 @@ namespace UnitOfWorkDemo.Services.ServiceExtension
             });
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<ICustomerRepository, CustomerRepository>();
 
             return services;
         }

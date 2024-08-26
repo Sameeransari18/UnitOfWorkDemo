@@ -11,5 +11,6 @@ namespace UnitOfWorkDemo.Data
         }
 
         public DbSet<ProductDetail> Products { get; set; }
+        public DbSet<CustomerDetail> Customers { get; set; }
     }
 }
